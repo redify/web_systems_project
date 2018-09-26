@@ -1,0 +1,23 @@
+I've always had an interest in meteorology (in fact, I already have a bachelors degree in it!).
+One thing that I have always wanted to do was monitor and record the weather conditions within and around my house.
+
+
+My goal for this project is to create a small "weather station" for me to track and record 
+weather conditions (temperature, humidity, pressure, etc.) within my house.
+I will use a rasberry pie and wire some sensors to detect this data.
+
+The data will be stored in a database (probably just on the pie).
+
+The idea is that I will be able to remotely access current and past weather data from website
+hosted either on my pie or the cs weblab servers.
+
+I'll need to investigate cost efficient sensors (I'll probably have to sacrifice some accuracy to save money)
+and manufactors that have good drivers and support.
+
+I'll need to do a good chunk of research and practice with wiring and communicating with devices at a low level.
+The hope is that the manufactorer that I purchase the sensor from will have documentation for drivers and wiring.
+
+For now, I will only start with one indoor device.  Depending on how successful I am, I might look into adding additional indoor 
+devices.
+Adding an outdoor device will add alot of complexity and issues, so I'm doubtful that will happen.
+
