@@ -10,7 +10,7 @@ This is a great location to grab random bits of hardware for (primarily) ardinos
 Most of the stuff they have on there requires some leveling of wiring and low level work with the hardware.
 
 I've come across a sensor that is cheap and does everything I was looking to do for a basic weather station.
-https://learn.adafruit.com/adafruit-bmp280-barometric-pressure-plus-temperature-sensor-breakout/overview
+https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout/overview
 
 They provide extensive documentation, drivers (based on python), and wiring instructions.
 I think this is a great start.
