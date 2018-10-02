@@ -1,0 +1,20 @@
+So, I've dug up my "old" rasberry pi (2, Model B) that I already had around the house.
+
+I can't recall the login info, so I may need to wipe and reset whatever is on there.
+Hopefully I backed up anything important.
+
+I've been looking at a website that I have used in the past,
+https://www.adafruit.com/
+
+This is a great location to grab random bits of hardware for (primarily) ardinos and rasberry pi
+Most of the stuff they have on there requires some leveling of wiring and low level work with the hardware.
+
+I've come across a sensor that is cheap and does everything I was looking to do for a basic weather station.
+https://learn.adafruit.com/adafruit-bmp280-barometric-pressure-plus-temperature-sensor-breakout/overview
+
+They provide extensive documentation, drivers (based on python), and wiring instructions.
+I think this is a great start.
+
+I already have some spare wires, soldering tools, and a breakout board, so I can try experimenting with this soon.
+
+The only worry I have is if it will be compatible with my Rasberry Pi 2.
