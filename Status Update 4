@@ -19,3 +19,6 @@ unit (https://www.adafruit.com/product/2310).  I'm not sure if it will be big en
 Since I really want to start soldering, I've started working on the the sensor.  I've gone ahead and soldered the header strip to the BME 280.  I was able to practice a bit soldering before hand, so I think I avoided any cold joints.
 
 We will see shortly if I messed anything up.
+
+Wiring it should not be too hard. I can follow the instructions here.  This next part will not require any soldering, since I purchased
+the breakout breadboard for that exact reason (for testing purposes)
