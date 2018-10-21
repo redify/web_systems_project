@@ -1,0 +1,21 @@
+Purchased most of the hardware I will need to at least get a prototype working.
+
+Besides the fundumentals (soldering, solder, etc),
+I purchased the BME280 I2C or SPI Temperature Humidity Pressure Sensor (https://www.adafruit.com/product/2652)
+as my main sensor.
+
+I also purchased (mostly on whim) and small LCD screen.  I'm not sure if I will actually use it, but I think it would be cool
+to display this temp info visually without having to log into the machine or navigate to the website.
+(https://www.adafruit.com/product/399)
+
+Some other things I purchased:
+Breadboard for prototyping (plus breadboard wire bundles + Cobbler)
+USB wifi dongle
+Clear case for Raspberry Pi 2
+"Perma" prototype breadboard hat for PI.  This is sorta cool.  I could, in theory, attach this to the PI and make a more complete
+unit (https://www.adafruit.com/product/2310).  I'm not sure if it will be big enough for both the screen and sensor.
+
+
+Since I really want to start soldering, I've started working on the the sensor.  I've gone ahead and soldered the header strip to the BME 280.  I was able to practice a bit soldering before hand, so I think I avoided any cold joints.
+
+We will see shortly if I messed anything up.
