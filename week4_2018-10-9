@@ -1,0 +1,7 @@
+After a little tinkering, I am now able to remotely access my raspberry pi from outside my local network.
+
+However, now that my Pi has been exposed, I need to think about some security precautions to prevent any bots from trying to
+brute force my pi.  I choose an usually port for the forewarding, so it shouldn't be immediately obvious.
+
+The next step is get work on the hardware and get stuff wired up.  I have made my choices on what I need. I'll be writing 
+up about that shortly once I make an attempt at assembly.
