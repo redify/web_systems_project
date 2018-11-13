@@ -5,7 +5,7 @@ $password = "ujieDai8";
 $dbname = "gjohnson";
 
 // Create connection
-$conn = mysql_connect($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
@@ -13,17 +13,15 @@ if ($conn->connect_error) {
 }
 
 $sql = "SELECT temp FROM base_obs";
-mysql_select_db($dbname);
-$result = mysql_query($sql, $conn);
+$result = $conn->query($sql);
 
-if(! $retval ) {
-    die('Could not get data: ' . mysql_error());
+if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
 }
 
-while($row = mysql_fetch_array($retval, MYSQL_ASSOC)) {
-    echo $row['temp'];
+while($row = $result->fetch_assoc()) {
+    echo $row["temp"];
 }
 
-mysql_close($conn);
-// echo 'php seems to work!'
+$conn->close();
 ?>
