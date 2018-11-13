@@ -1,0 +1,21 @@
+This week mostly focused on porting the work I had done on my personal server onto the weblab server.
+I've also gone ahead an set up another mysql server on weblab an added a fake entry into it.
+
+I modified the test php file I originally created to load the test entry from the DB and return it to the
+html page.  This pull is triggered via clicking on the "test" button on the homepage.
+
+All output is currenly piped into the console log.
+
+The next steps are to add a php script that can take a HTTP put request to store temperature values that are read from
+my temperature sensor.
+
+This week has also had me purchase my second round of hardware for this temperature sensor.
+My previous prototype worked for a short while, but I believe water caused corrosion and damaged the sensor.
+
+I'll have to think of some way to keep the sensor safe from the elements without obstructing the sensors.
+
+For next week:
+- beautify the webcode
+- add another php script on the weblab server to intercept http put request.
+- rebuild the temperature sensor
+- add python script to read from the sensor and send a http PUT request to the weblab server.
