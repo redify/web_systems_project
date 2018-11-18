@@ -1,0 +1,34 @@
+Pretty productive week so far.
+
+
+Last week I mentioned I was in the process of purchasing a new set of circuits to rebuild what I had originally.
+I've finished up soldering and putting together a breadboard of the setup.
+
+I've included in the project a series of images I took while soldering and wiring the sensor.
+This is technically my second prototype of the sensor.
+I plan to solder it to a more permanent circuit board in the coming weeks.
+
+I may also construct building a second sensor (for redundancy, as well as better coverage in my house).
+
+The second major milestone I completed this week was settting up the drivers and script for the sensor.
+
+I used circuitPython and manufactorer provided libraries to interface with the sensor.
+I then built a simple python script called "pull_obs_data.py" that pulls the data from the 
+sensor and sends it off in a http request to the cs.uml.edu servers.
+This script is run automatically via crontab every 5 minutes.
+
+The finally milestone for this week is finishing the server infrastructure for communication between my weather sensor
+and the weblab servers.
+
+A major hurtle I had to overcome was the communication between the weather sensor (which is off-campus and in my house) 
+and the weblab servers (which require you to be on the schools network to connect with).
+To get around this issue, I created a middleman php script thats only responsibility is to relay the messages it receives to the
+weblab servers.
+
+As I mentioned before, the python script send a http get request to the cs.uml.edu middleman php script.  The middleman script mirrors the
+http request to the weblab server, which inserts those parameters into the database.
+
+----------------
+
+For next week, I will be building up the front end of the website to better visualize this data.
+I may also spend time constructing a second prototype.
