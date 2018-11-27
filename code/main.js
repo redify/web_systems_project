@@ -2,7 +2,7 @@ function getCurrentTemp(){
     console.log('fetching data from mysql...');
     $.ajax({
         type: "GET",
-        url: "php/server.php",
+        url: "php/getobsdata.php",
         data: "",
         success: function(data){
             console.log("returned data: " + data);
