@@ -1,3 +1,6 @@
+*** LINK TO CODE CHANGES ***
+https://github.com/redify/web_systems_project/commit/f1097787e88bfdcf88449dd1a4aec9bf9d15bb29
+
 So, I've run into some issues with the hardware.
 last update, I believe I mentioned I purchased the sensor and its associated wires and attachments.
 Well, I think I may have damaged the hardware (or there might be corrision on the chip, not sure yet).  I'm still investigating to see what happened, but I will likely need to buy another sensor.
@@ -13,6 +16,3 @@ I have also initialized a MySQL database to store temperature, humidity, and pre
 The code I have pushed is more of a "this proves it works", rather than anything meaningful.
 However, this is a good launching point to tie the PHP into the DB and start returning temperature values.
 Even if I have issues witht he hardware for a little while, I can at least get the server working.
-
-LINK TO CODE CHANGES:
-https://github.com/redify/web_systems_project/commit/f1097787e88bfdcf88449dd1a4aec9bf9d15bb29
