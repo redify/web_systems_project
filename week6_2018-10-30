@@ -2,7 +2,10 @@ So, I've run into some issues with the hardware.
 last update, I believe I mentioned I purchased the sensor and its associated wires and attachments.
 Well, I think I may have damaged the hardware (or there might be corrision on the chip, not sure yet).  I'm still investigating to see what happened, but I will likely need to buy another sensor.
 
-It's not the end of the world.  Probably.
+This is the guide I used to solder the board together:
+https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout
+
+I do not have the hardware to test the circuits on, so I have resorted to purchasing another sensor unit.
 
 In the mean time, I've focused my effors on setting of the apache web server and getting some code up here.
 I have also initialized a MySQL database to store temperature, humidity, and pressure values.
@@ -11,5 +14,5 @@ The code I have pushed is more of a "this proves it works", rather than anything
 However, this is a good launching point to tie the PHP into the DB and start returning temperature values.
 Even if I have issues witht he hardware for a little while, I can at least get the server working.
 
-In case you are curious, here is the link to my webserver at home
-http://www.redweather.us:8080/
+LINK TO CODE CHANGES:
+https://github.com/redify/web_systems_project/commit/f1097787e88bfdcf88449dd1a4aec9bf9d15bb29
