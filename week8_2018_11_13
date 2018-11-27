@@ -1,10 +1,16 @@
-CODE CHANGES: 
+*** CODE CHANGES FOR THE WEEK *** 
 https://github.com/redify/web_systems_project/pull/3/files
 
 Pretty productive week so far.
 
 Last week I mentioned I was in the process of purchasing a new set of circuits to rebuild what I had originally.
 I've finished up soldering and putting together a breadboard of the setup.
+
+Link to the new sensor I got:
+https://www.adafruit.com/product/3660
+
+Wiring and setup guide:
+https://learn.adafruit.com/adafruit-bme680-humidity-temperature-barometic-pressure-voc-gas/python-circuitpython
 
 I've included in the project a series of images I took while soldering and wiring the sensor.
 This is technically my second prototype of the sensor.
