@@ -12,6 +12,9 @@ https://www.adafruit.com/product/3660
 Wiring and setup guide:
 https://learn.adafruit.com/adafruit-bme680-humidity-temperature-barometic-pressure-voc-gas/python-circuitpython
 
+Pictures of me building it:
+https://github.com/redify/web_systems_project/tree/master/images
+
 I've included in the project a series of images I took while soldering and wiring the sensor.
 This is technically my second prototype of the sensor.
 I plan to solder it to a more permanent circuit board in the coming weeks.
