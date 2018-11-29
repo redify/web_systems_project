@@ -1,0 +1,31 @@
+*** CODE CHANGES ***
+<add link to pull request>
+
+I primary expanded the fetch mechanics for this project this week.
+
+I expanded the existing get current obs (getobsdata.php) script to return more data (rh, timestamp, pressure, temp),
+as well as return the data as a json object.
+
+I also added a new php script called range_get_obs_data.php.
+This script is intended to return the historical recorded obs, currently for the past 24 hours.
+The data is returned in an json object array.
+
+Finally, I updated the javascript to call both php scripts on document load and run on a timeout function so
+the php scripts are called and the values on the webpage are updated.
+
+References I used to figure this out:
+
+mysql and php...
+https://www.w3schools.com/php/php_mysql_select.asp
+
+Json object encode for php...
+http://php.net/manual/en/function.json-encode.php
+
+The reason I had the php return a json object was so that the javascript could easily translate it into a javascript object.
+
+The next steps will be to update the javascript and add css to render the current obs and historical obs.
+
+DIFFICULTIES:
+
+I didn't really run into any issues.  Any difficulties I ran into were mostly
+just figuring out via the guides I linked above.
