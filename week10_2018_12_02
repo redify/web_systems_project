@@ -1,0 +1,45 @@
+*** CODE CHANGES ***
+https://github.com/redify/web_systems_project/pull/5
+
+WHAT I ACCOMPLISHED THIS WEEK:
+I completely rewrote the frontend to finish off the web work.
+This includes implementing all the css and javascript, and integrating the php returns into the website.
+
+I used the following javascript libraries to complete my task:
+jquery
+jqueryui
+moment.js
+highstock/highcharts.
+
+jqueryui was used for the tabs.
+highstock and highcharts was used for the chart rendering.
+
+The two data elements (the current temps on the left and the chart of the right) are automatically updated via ajax
+on a timeout function.
+
+I am using the two get php scripts I mentioend last week to pull the data.  Both php scripts return a json object, which can be
+easily ingested into the javascript and used a js object.
+
+For the css, I primarily positioned everything using flexbox.
+
+REFERENCES:
+flexbox guide:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Highstock/chart API:
+https://api.highcharts.com/highstock/
+
+JqueryUI tabs:
+https://jqueryui.com/tabs/
+
+DIFFICULTIES:
+css and designing a website has always been a challenge for me.
+The website went through multiple designs, and I struggled with the css to get it to do what I needed.
+Flexbox is, by and far, the easiest method to position things on the webpage.  I still have to spend a considerable amount
+of time looking documents up in order to get it to work, but its much simplier than just left shifting and width/height pixel shifting 
+elements.
+I brought in a few family members to look at and use the page to try and get a sense of what needed to change.
+It's better than it was before, but it still needs work.
+
+
+
