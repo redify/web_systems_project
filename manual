@@ -2,3 +2,38 @@ Tools needed for temperature sensor:
 
 Soldering Kit (solder, soldering iron, etc)
 Raspberry Pi (Model 2 or later)
+GPIO Header (https://www.adafruit.com/product/1992)
+BME680 - Temperature, Humidity, Pressure and Gas Sensor (https://www.adafruit.com/product/3660)
+Copper wires
+
+Directions:
+First, some distribution of linux needs to be installed on the Raspberry PI.  I used Raspbian.
+You then need to install a series of libraries in order to read IC2 data and the BME driver.
+Required Libs:
+Circuit Python (https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuitpython-on-raspberry-pi)
+Python3
+CircuitPython BME Driver (https://learn.adafruit.com/adafruit-bme680-humidity-temperature-barometic-pressure-voc-gas/python-circuitpython)
+
+Wiring instructions and test code are provided on that site as well.
+
+
+
+Web and Server code and setup:
+
+Tools:
+
+Apache Server
+MySQL
+PHP
+Javascript/HTML/CSS
+
+The Apache server needs to be setup to use php.
+
+The MySQL database needs to contain one table, called base_obs.
+The table needs 4 columns, timestamp,temp,rh, and pressure.
+
+Four Javascript libraries need to be included as well.
+Moment.js (https://momentjs.com/)
+JQuery (https://jquery.com/download/)
+JQueryUI (https://jqueryui.com/download/)
+Highstock/HighCharts (https://www.highcharts.com/blog/download/)
