@@ -5,8 +5,33 @@ my house.
 
 However, I've always wanted to have more control over what I can do with that data collected.
 
-THe idea of the project is to setup a system in which I can monitor the weather conditions both inside and outside my house.
+The idea of the project is to setup a system in which I can monitor the weather conditions both inside and outside my house.
 As a stretch goal, I wanted to be able to monitor the conditions outside as well.
 
 The entire scope of this project was not reached.
-The unit I produced is very much prototype.  Although it succeeds in at least monitoring conditions inside the house, it lacks protection from the 
+The unit I produced is very much prototype.  Although it succeeds in at least monitoring conditions inside the house, 
+it lacks protection from the elements, so it cannot survive outside the house.
+
+
+Technical Overview:
+
+This project has two main components: the sensor and the web server.
+
+The sensor is a Paspberry PI connected to the BME 680 atmospheric sensor using the IC2 serial protocol for data communication
+over the PI's GPIO bus.
+The manufactorer provided python based libraries to communicate and decode the bits coming from the sensor of the IC2 port.
+
+I wrote a small python script that pulls the temperature, relative humidity, and presssure from this sensor and, using a POST request,
+sends this data to the cs.uml.edu webservers.   The script is triggered at a 5 minute interval using crontab.
+
+This moves our discussion to the servers.
+
+Since I am not able to connect to the directly to the weblab servers outside the school's network, I made a php script thats
+sole purpose is to echo and POST request it gets to another PHP script on the weblab servers.  THe python script on the 
+PI targets this "middleman" script on the cs.uml.edu servers.
+This script then echos the POST to the weblab servers to another PHP script that takes this data and inserts it into a MySQL server.
+
+The MySQL database has only one table, and this tables has four columns; temperature, relative humidity, pressure, and a datetime.
+
+I have two other PHP scripts available available that act as the GET scripts to fetch data from the DB.
+The first of these of scripts, 
