@@ -12,7 +12,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT timestamp,temp,rh,pressure FROM base_obs WHERE timestamp > DATE_SUB(now(), INTERVAL 1 DAY) ORDER BY timestamp desc";
+$sql = "SELECT timestamp,temp,rh,pressure FROM base_obs WHERE timestamp > DATE_SUB(now(), INTERVAL 1 MONTH) ORDER BY timestamp desc";
 $result = $conn->query($sql);
 
 if ($conn->connect_error) {
