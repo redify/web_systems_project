@@ -8,10 +8,6 @@ However, I've always wanted to have more control over what I can do with that da
 The idea of the project is to setup a system in which I can monitor the weather conditions both inside and outside my house.
 As a stretch goal, I wanted to be able to monitor the conditions outside as well.
 
-The entire scope of this project was not reached.
-The unit I produced is very much prototype.  Although it succeeds in at least monitoring conditions inside the house, 
-it lacks protection from the elements, so it cannot survive outside the house.
-
 
 Technical Overview:
 
@@ -34,4 +30,43 @@ This script then echos the POST to the weblab servers to another PHP script that
 The MySQL database has only one table, and this tables has four columns; temperature, relative humidity, pressure, and a datetime.
 
 I have two other PHP scripts available available that act as the GET scripts to fetch data from the DB.
-The first of these of scripts, 
+The first of these of scripts, getobsdata.php, pulls the most recent data from the DB and returns this to the caller as a JSON object.
+The second script, range_get_obs_data.php, returns an array of json objects used to plot the history of observations.
+
+On the client side, I've taken advantage of a few Javascript libraries to simplify my life.
+The four libraries I've used are; JQuery, JQueryUI, moment.js, and HighStock/HighCharts
+
+Highstock and Highcharts are a plotting/charting library that provides the line graph of the historical observations.
+JQueryUI provides the tabs used to switch between the three different charts.
+moment.js is used to shift the times on the chart to EST/EDT.
+
+When the initially webpage loads, two Ajax calls are triggered; the first pulls the current obs from "getobsdata.php", 
+and the second targets range_get_obs_data.php to get about 1 months worth of data.
+
+These Ajax calls run on a timeout so that the data onscreen is automatically updated on an interval without the need of refreshing.
+
+While the website might not have the most visually appealing look, I believe its simple to read and understand. One the left hand
+I placed the current observations on a 1 minute refresh timer.
+On the right hand side I placed the three charts contained the observations for the past month.  This updated on a 5 min interval.
+
+One final note to make is how I did the css.  The css I coded is in the file "main-styles.css".
+I primarily used flexbox for positioning of the elements on the page.
+
+
+After Thoughts:
+
+The entire scope of this project was not reached.
+The unit I produced is very much prototype.  Although it succeeds in at least monitoring conditions inside the house, 
+it lacks protection from the elements, so it cannot survive outside the house. I have found that the sensor is extremely
+vulnerable to moisture and can easily corride ( as I had happen to my first sensor).
+
+I also want to expand to use multiple units to tracks the conditions in each room.  This would require modifying the current
+DB table to include some sort of ID to identify each device reporting to it.
+By having multiple units, I could have a literal "heatmap" of the conditions in the house.
+
+Another strech goal was adding some of LCD screen so I could see the conditions in the house without having to navigate to the 
+website.  While I did look into this, I decided this would have to be moved out of the scope of this project.
+
+Finally, after this semester ends, I will be migrating this website and server back into my house on a Raspberry Pi server so I 
+can continue working on this long after the school tosses my account out the window.
+
