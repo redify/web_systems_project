@@ -15,3 +15,5 @@ BME680 atmospheric sensor driver (https://learn.adafruit.com/adafruit-bme680-hum
 
 modified:
 PHP Mysql connect/select example (https://www.w3schools.com/php/php_mysql_select.asp)
+ -> I used the code example provided in the tutorial and modified it to work in my environment.
+ -> This appears in the two php scripts: getobsdata.php and range_get_obs_data.php
